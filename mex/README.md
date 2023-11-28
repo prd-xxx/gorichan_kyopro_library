@@ -1,7 +1,7 @@
 # Mex (多重集合を管理しつつ、そのMEXを高速に返すモジュール)
 
 動作原理としては、内部で[MinSet](https://github.com/prd-xxx/gorichan_kyopro_library/tree/main/deletable_heapq) を利用しています  
-集合の要素数が`N`であるとき、そのmexは高々`N`であることから、0からNの値の出現回数を管理し、出現回数が0であるものを`MinSet`で管理しています。  
+集合の要素数が`N`であるとき、そのMEXは高々`N`であることから、0からNの値の出現回数を管理し、出現回数が0であるものを`MinSet`で管理しています。  
 
 ## Mex にできること
 
