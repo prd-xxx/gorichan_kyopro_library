@@ -1,5 +1,4 @@
-
-m heapq import heappop,heappush,heapify
+from heapq import heappop,heappush,heapify
 class MinSet:
     def __init__(self, arr=[]) -> None:
         self.q = arr
