@@ -47,7 +47,7 @@ print(lowlink.articulation_points)
 
 * `dfs_parent`
 
-探索時のDFS探索木(森)における親頂点が格納された配列です 　
+探索時のDFS探索木(森)における親頂点が格納された配列です  
 `dfs_parent[v]` は、vの親が入ります 根なら`-1` です  
 
 * `dfs_child`
