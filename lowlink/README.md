@@ -43,7 +43,7 @@ print(lowlink.articulation_points)
 
 * `low`  
 
-`order[u] <= low[v]` のとき、辺(u,v)は橋となります  
+辺(u,v)が橋となるとき、 `order[u] < low[v]` を満たします  
 
 * `dfs_parent`
 
