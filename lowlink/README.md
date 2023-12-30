@@ -41,20 +41,25 @@ print(lowlink.articulation_points)
 探索時のDFS探索木(森)における訪問順です  
 
 * `low`  
+
 `order[u] <= low[v]` のとき、辺(u,v)は橋となります  
 
 * `dfs_parent`
-探索時のDFS探索木(森)における親頂点が格納された配列です  
+探索時のDFS探索木(森)における親頂点が格納された配列です 
+
 `dfs_parent[v]` は、vの親が入ります 根なら`-1` です  
 
 * `dfs_child`
+
 探索時のDFS探索木(森)における子頂点の配列が格納された配列です  
 `dfs_child[v]` は、vの子頂点の配列です 葉なら空配列です  
 
 * `is_dfs_root`
+
 探索時のDFS探索木(森)における根なら`1`、そうでなければ`0` です  
 
 * `component_num`
+
 探索時のDFS探索森の連結成分数です。連結なら`1`です  
 
 
