@@ -57,7 +57,7 @@ print(lowlink.articulation_points)
 
 * `is_dfs_root`
 
-探索時のDFS探索木(森)における根なら`1`、そうでなければ`0` です  
+`is_dfs_root[v]` は、頂点vが探索時のDFS探索木(森)における根なら`1`、そうでなければ`0` です  
 
 * `component_num`
 
