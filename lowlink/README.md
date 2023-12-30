@@ -38,6 +38,7 @@ print(lowlink.articulation_points)
 ## その他得られるものたち
 
 * `order`
+
 探索時のDFS探索木(森)における訪問順です  
 
 * `low`  
@@ -45,6 +46,7 @@ print(lowlink.articulation_points)
 `order[u] <= low[v]` のとき、辺(u,v)は橋となります  
 
 * `dfs_parent`
+
 探索時のDFS探索木(森)における親頂点が格納された配列です 
 
 `dfs_parent[v]` は、vの親が入ります 根なら`-1` です  
