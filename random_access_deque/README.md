@@ -1,6 +1,6 @@
 # random_access_deque
 
-Pythonで、ランダムアクセスがO(1)でできる両端キュー、(通称: ごりちゃんDeque) です  
+Pythonで、ランダムアクセスがO(1)でできる両端キュー、(通称: **ごりちゃんDeque**) です  
 以下の記事に詳しく書いています  
 https://prd-xxx.hateblo.jp/entry/2020/02/07/114818  
 
@@ -11,7 +11,7 @@ https://prd-xxx.hateblo.jp/entry/2020/02/07/114818
 #### 初期化
 
 次のいずれかの形式で初期化します (引数省略可能です)  
-s
+
 ```
 q = Deque()
 q = Deque([10, 20])
@@ -44,7 +44,7 @@ print(q, b) # Deque([10, 20]) 40
 
 #### indexを指定してのget,set
 
-この辺も `deque` モジュールと使い勝手は一緒ですが、listのようにO(1) です！
+この辺も `deque` モジュールと使い勝手は一緒ですが、listのようにO(1) です！  
 Pythonらしく負のindexにも対応しています！
 
 ```
@@ -61,7 +61,7 @@ print(q) # Deque([10, 60, 30, 70, 50])
 
 #### 型変換  
 
-`list(q)` のようにすれば list に変換できます！
-`set(q)` で set に、`list(reversed(q))` で逆順リストに変換できます
-もちろん `len(q)` で要素数も取れます  
+`list(q)` のようにすれば list に変換できます！  
+`set(q)` で set に、`list(reversed(q))` で逆順リストに変換できます  
+もちろん `len(q)` で要素数も取れます    
 
