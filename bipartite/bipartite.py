@@ -4,14 +4,14 @@ class Bipartite:
         self.es = es
         self.N = len(es)
     def analize(self):
-        self.isolated_vertiecs = []
+        self.isolated_vertices = []
         self.bipartite_ccs = []
         self.not_bipartite_ccs = []
         self.cols = [0] * self.N
         for s in range(self.N):
             if self.cols[s] != 0: continue
             if len(self.es[s])==0:
-                self.isolated_vertiecs.append(s)
+                self.isolated_vertices.append(s)
                 continue
             stack = [(s,1)]
             self.cols[s] = 1
