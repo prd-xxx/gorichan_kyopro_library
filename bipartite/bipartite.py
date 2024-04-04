@@ -14,17 +14,18 @@ class Bipartite:
                 self.isolated_vertiecs.append(s)
                 continue
             stack = [(s,1)]
+            self.cols[s] = 1
             is_bipartite = True
             ccs = {s}
             while stack:
                 v,col = stack.pop()
-                self.cols[v] = col
                 for to in self.es[v]:
                     ccs.add(to)
                     if self.cols[to] == col:
                         is_bipartite = False
                     if self.cols[to] == 0:
                         stack.append((to, -col))
+                        self.cols[to] = -col
             if is_bipartite:
                 self.bipartite_ccs.append(ccs)
             else:
