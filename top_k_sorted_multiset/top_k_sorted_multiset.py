@@ -3,7 +3,7 @@
 
 
 
-# https://github.com/prd-xxx/gorichan_kyopro_library/tree/main/top_k_sorted_multiset.py
+# https://github.com/prd-xxx/gorichan_kyopro_library/blob/main/top_k_sorted_multiset/top_k_sorted_multiset.py
 class TopKSortedMultiset:
     def __init__(self, k, arr:Iterable[T] = [], mode_max = True) -> None:
         assert k >= 0
