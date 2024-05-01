@@ -1,6 +1,6 @@
 # TopKSortedMultiset
 
-大きい方/小さい方からK個の値の和とかを保持しつつ、自由に追加/削除できるくん
+大きい方/小さい方からK個の値の和とかを保持しつつ、自由に追加/削除できるくん  
 追加/削除 O(√N) です  
 内部でtatyam-primeさんの`SortedMultiset`を2本持ってるだけです  
 追加/削除の際に、`topk`側は要素K個以下、`other`側は`topk`が要素K個未満ならば必ず空を保ちます  
@@ -9,7 +9,7 @@
 本ソースコードを貼り付け、さらにtatyam-primeさんの[SortedMultiset](https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py)を貼り付けるといい感じに動きます  
 
 初期化と使用例は以下の感じです  
-初期化の引数1つ目は`k`, 2つ目は初期配列(Iterableなら良い、省略化)  
+初期化の引数1つ目は`k`, 2つ目は初期化配列(Iterableなら良い、省略化)  
 `mode_max=False` にすると小さい方からK個を`topk`とします (省略すると大きい方)  
 
 ```
