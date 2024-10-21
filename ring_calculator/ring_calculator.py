@@ -11,15 +11,3 @@ class RingCalculator:
         return (to - fr) % self.size
     def dist_anticlockwise(self, from_index, to_index):
         return (self.size - self.dist_clockwise(from_index, to_index)) % self.size
-
-rc = RingCalculator(5, base_index=1)
-print(rc.dist_clockwise(3, 3)) # 0
-print(rc.dist_clockwise(3, 4)) # 1
-print(rc.dist_clockwise(3, 5)) # 2
-print(rc.dist_clockwise(3, 1)) # 3
-print(rc.dist_clockwise(3, 2)) # 4
-print(rc.dist_anticlockwise(3, 3)) # 0
-print(rc.dist_anticlockwise(3, 2)) # 1
-print(rc.dist_anticlockwise(3, 1)) # 2
-print(rc.dist_anticlockwise(3, 5)) # 3
-print(rc.dist_anticlockwise(3, 4)) # 4
