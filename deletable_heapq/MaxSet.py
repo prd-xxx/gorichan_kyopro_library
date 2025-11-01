@@ -1,9 +1,10 @@
 from heapq import heappop,heappush,heapify
+from typing import List
 class MaxSet:
     def __init__(self, arr=[]) -> None:
-        self.q = arr
+        self.q: List[int] = [-a for a in arr]
         heapify(self.q)
-        self.d = []
+        self.d: List[int] = []
     def add(self,x):
         heappush(self.q, -x)
     def remove(self,x):
